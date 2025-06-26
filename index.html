@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://wsxzaq127.github.io/style.css">
 </head>
 
 <body>
@@ -18,10 +20,10 @@
                         <a href="#home" class="">Главная</a>
                     </li>
                     <li class="nav_item">
-                        Сообщество
+                        <a href="#about" class="">Сообщество</a>
                     </li>
                     <li class="nav_item">
-                        Библиотека
+                        <a href="#gallery" class="">Библиотека</a>
                     </li>
                     <li class="nav_item">
                         <a href="reviews.html" class="">
@@ -46,7 +48,7 @@
             <h1 class="video_title">Видео</h1>
 <iframe class="my_video" src="https://www.youtube.com/embed/17LvS3OL6rA?si=YIPfSpb-AqOxPRxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container_about">
                 <h2 class="about_title">Социальные предложения</h2>
                 <div class="about_content">
@@ -55,8 +57,36 @@
                 </div>
             </div>
         </section>
+        <section class="gallery" id="gallery">
+            <h2 class="gallery_title">Библиотека</h2>
+            <ul class="gallery_list">
+                <li class="gallery_item">
+                    <a href="img/gallery__img.png" class="lightzoom gallery_link">
+                        <img src="img/gallery__img.png" alt="" class="gallery_img">
+                    </a>                    
+                </li>
+                <li class="gallery_item">
+                    <a href="img/gallery__img (1).png" class="lightzoom gallery_link">
+                        <img src="img/gallery__img (1).png" alt="" class="gallery_img">
+                    </a>   
+                </li> 
+                <li class="gallery_item">
+                    <a href="img/gallery__img (2).png" class="lightzoom gallery_link">
+                        <img src="img/gallery__img (2).png" alt="" class="gallery_img">
+                    </a>
+                </li>  
+                <li class="gallery_item">
+                    <a href="img/gallery__img (3).png" class="lightzoom gallery_link">
+                        <img src="img/gallery__img (3).png" alt="" class="gallery_img">
+                    </a>
+                </li>
+            </ul>
+        </section>
     </main>
-
+    <script type="text/javascript" src="https://wsxzaq127.github.io/lightzoom.js"></script>
+    <script type="text/javascript">
+ 		jQuery('.lightzoom').lightzoom({speed: 400, viewTitle: true});
+	</script>
     <footer>
         <section class="footer">
         <div class="footer_container">
